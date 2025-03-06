@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenar{
+    width: calc(100% - 120px);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #f40b0b;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+.loading{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+position: fixed;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.151);
+
+}
+.loader2 {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #f40b0b;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+.loading2{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+position: fixed;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.151);
+
+}
+.d-none{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #1e2ff1;
+}
+header{
+    background-color: rgb(238, 229, 249);
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+   
+}
+.logo{
+    width:400px;
+
+}
+header .logo img{
+    width: 70px;
+    height: 70px;
+
+
+}
+
+ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first-sec img{
+    width: 100%;
+    height: 450px;
+}
+.first-sec .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.first-sec{
+    padding: 10px;
+    background-color: rgb(178, 130, 233);
+    color:rgb(60, 1, 1);
+}
+.categories h2{
+    
+    text-align: center;
+}
+.categories .contenar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.categories{
+    padding: 25px;
+    background-color: rgb(238, 229, 249);
+}
+.footer .col-md-4{
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+.footer ul{
+display: flex;
+flex-wrap: wrap;
+}
+
+.footer img{
+    width: 70px;
+    height: 70px;
+
+}
+.footer{
+    background-color: rgb(60, 59, 59);
+    color: white;
+}
+.categories .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.categories .catagory{
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 100px;
+}
+/* details */
+.products .heder{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #1e2ff1;
+    background-color: rgb(238, 229, 249);
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+
+}
+.products .contenar{
+
+ padding-bottom: 30px;
+}
+.products .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.product{
+    width: calc((100% - 300px)/3);
+    min-width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    height: 350px;
+   border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.product:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+ 
+}
+
+.product h2{
+    font-size: 14px;
+    color: #1e2ff1;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+    max-width: 40ch; 
+    white-space: normal; 
+   
+ 
+
+
+}
+.product img{
+    width: 70%;
+    height: 200px;
+}
+.bodydetails{
+    background-color: rgb(238, 229, 249);
+}
+
+.productsdetails img{
+    width:500px;
+    height: 500px;
+}
+
+.row .productsdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.row .productdetails{
+    border: 1px solid #090909;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+.productdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.allProductsbtn{
+    align-self: flex-end; 
+    margin-top: 30px;
+    background-color: rgb(178, 130, 233);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+.catagory a{
+    color:  rgb(120, 95, 190);
+}
+
+.catagory a:hover{
+    color:  rgb(178, 130, 233);
+    transform: scale(1.08);
+}
+.all{
+    background-color: rgb(238, 229, 249);
+ 
+}
+.allProductsbtn a{
+    text-decoration: none;
+   color:  rgb(238, 229, 249);
+}
+
+.allProductsbtn:hover {
+    background-color: rgb(120, 95, 190);
+    transition: all 0.3s ease;
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+header a{
+color: #000;
+   
+}
+.my-modal{
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+
+}
+.my-modal .img{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 50px 65px;
+    position: relative;
+
+}
+
+
+.my-modal img{
+  width: 400px;
+  height: 400px;
+}
+.left-btn,.right-btn,.x-btn{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+.left-btn{
+left: 10px;
+top:50%;
+}
+
+.right-btn{
+right: 10px;
+    top: 50%;
+
+}
+.x-btn{
+top: 10px;
+    right: 10px;
+}
+
+.d-none{
+    display: none;
+}
+.product img,.x-btn,.right-btn,.left-btn{
+    cursor: pointer;
+}
+
+
+.productsdetails .contenar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagenation{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+
+
+}
+
+.pagenation a{
+    text-decoration: none;
+}
+
+.pagenation button{
+    padding: 0 6px;
+}
